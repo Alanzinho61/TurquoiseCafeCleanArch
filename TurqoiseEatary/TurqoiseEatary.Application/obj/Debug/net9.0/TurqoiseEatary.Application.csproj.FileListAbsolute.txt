@@ -1,0 +1,15 @@
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\bin\Debug\net9.0\TurqoiseEatary.Application.deps.json
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\bin\Debug\net9.0\TurqoiseEatary.Application.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\bin\Debug\net9.0\TurqoiseEatary.Application.pdb
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\TurqoiseEatary.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\TurqoiseEatary.Application.AssemblyInfoInputs.cache
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\TurqoiseEatary.Application.AssemblyInfo.cs
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\TurqoiseEatary.Application.csproj.CoreCompileInputs.cache
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\TurqoiseEatary.Application.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\refint\TurqoiseEatary.Application.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\TurqoiseEatary.Application.pdb
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\ref\TurqoiseEatary.Application.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\bin\Debug\net9.0\TurqoiseEatary.Domain.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\bin\Debug\net9.0\TurqoiseEatary.Domain.pdb
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\TurqoiseEatary.Application.csproj.AssemblyReference.cache
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\Turqoise.8115A49D.Up2Date

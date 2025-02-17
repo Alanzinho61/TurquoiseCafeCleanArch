@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "uQRzW3F+CaQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Api\\TurqoiseEatary.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.2\\microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

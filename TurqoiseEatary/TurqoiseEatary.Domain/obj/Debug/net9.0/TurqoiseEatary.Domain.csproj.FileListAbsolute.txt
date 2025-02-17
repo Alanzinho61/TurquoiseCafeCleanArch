@@ -1,0 +1,11 @@
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\bin\Debug\net9.0\TurqoiseEatary.Domain.deps.json
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\bin\Debug\net9.0\TurqoiseEatary.Domain.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\bin\Debug\net9.0\TurqoiseEatary.Domain.pdb
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\TurqoiseEatary.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\TurqoiseEatary.Domain.AssemblyInfoInputs.cache
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\TurqoiseEatary.Domain.AssemblyInfo.cs
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\TurqoiseEatary.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\TurqoiseEatary.Domain.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\refint\TurqoiseEatary.Domain.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\TurqoiseEatary.Domain.pdb
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\ref\TurqoiseEatary.Domain.dll

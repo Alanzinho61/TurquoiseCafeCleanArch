@@ -1,0 +1,281 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Microsoft.AspNetCore.OpenApi/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "TurqoiseEatary.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.2",
+          "TurqoiseEatary.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TurqoiseEatary.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TurqoiseEatary.Application.dll": {}
+        }
+      },
+      "TurqoiseEatary.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/TurqoiseEatary.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TurqoiseEatary.Contracts.dll": {}
+        }
+      },
+      "TurqoiseEatary.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/TurqoiseEatary.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TurqoiseEatary.Domain.dll": {}
+        }
+      },
+      "TurqoiseEatary.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "TurqoiseEatary.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TurqoiseEatary.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TurqoiseEatary.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.OpenApi/9.0.0": {
+      "sha512": "FqUK5j1EOPNuFT7IafltZQ3cakqhSwVzH5ZW1MhZDe4pPXs9sJ2M5jom1Omsu+mwF2tNKKlRAzLRHQTZzbd+6Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.2": {
+      "sha512": "MNe7GSTBf3jQx5vYrXF0NZvn6l7hUKF6J54ENfAgCO8y6xjN1XUmKKWG464LP2ye6QqDiA1dkaWEZBYnhoZzjg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "TurqoiseEatary.Application/1.0.0": {
+      "type": "project",
+      "path": "../TurqoiseEatary.Application/TurqoiseEatary.Application.csproj",
+      "msbuildProject": "../TurqoiseEatary.Application/TurqoiseEatary.Application.csproj"
+    },
+    "TurqoiseEatary.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../TurqoiseEatary.Contracts/TurqoiseEatary.Contracts.csproj",
+      "msbuildProject": "../TurqoiseEatary.Contracts/TurqoiseEatary.Contracts.csproj"
+    },
+    "TurqoiseEatary.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TurqoiseEatary.Domain/TurqoiseEatary.Domain.csproj",
+      "msbuildProject": "../TurqoiseEatary.Domain/TurqoiseEatary.Domain.csproj"
+    },
+    "TurqoiseEatary.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../TurqoiseEatary.Infrastructure/TurqoiseEatary.Infrastructure.csproj",
+      "msbuildProject": "../TurqoiseEatary.Infrastructure/TurqoiseEatary.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Microsoft.AspNetCore.OpenApi >= 9.0.0",
+      "TurqoiseEatary.Application >= 1.0.0",
+      "TurqoiseEatary.Contracts >= 1.0.0",
+      "TurqoiseEatary.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Mucahit\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Api\\TurqoiseEatary.Api.csproj",
+      "projectName": "TurqoiseEatary.Api",
+      "projectPath": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Api\\TurqoiseEatary.Api.csproj",
+      "packagesPath": "C:\\Users\\Mucahit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Mucahit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Application\\TurqoiseEatary.Application.csproj": {
+              "projectPath": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Application\\TurqoiseEatary.Application.csproj"
+            },
+            "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Contracts\\TurqoiseEatary.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Contracts\\TurqoiseEatary.Contracts.csproj"
+            },
+            "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Infrastructure\\TurqoiseEatary.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Infrastructure\\TurqoiseEatary.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XVQeF/yAt8k=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Application\\TurqoiseEatary.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.2\\microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
