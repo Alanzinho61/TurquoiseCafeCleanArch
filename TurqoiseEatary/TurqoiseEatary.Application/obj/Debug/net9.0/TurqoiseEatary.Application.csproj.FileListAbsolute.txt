@@ -13,3 +13,4 @@ C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\bin\Debug\net9.0\TurqoiseEatary.Domain.pdb
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\TurqoiseEatary.Application.csproj.AssemblyReference.cache
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\Turqoise.8115A49D.Up2Date
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Application\obj\Debug\net9.0\TurqoiseEatary.Application.sourcelink.json

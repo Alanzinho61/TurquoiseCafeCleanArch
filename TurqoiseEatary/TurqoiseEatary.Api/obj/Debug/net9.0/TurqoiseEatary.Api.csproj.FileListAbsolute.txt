@@ -39,4 +39,9 @@ C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Deb
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\TurqoiseEatary.Domain.pdb
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\TurqoiseEatary.Infrastructure.dll
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\TurqoiseEatary.Infrastructure.pdb
-C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\obj\Debug\net9.0\TurqoiseEatary.Api.sourcelink.json
