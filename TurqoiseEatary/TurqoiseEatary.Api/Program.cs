@@ -1,4 +1,5 @@
 
+using TurqoiseEatary.Api.Middleware;
 using TurqoiseEatary.Application;
 using TurqoiseEatary.Application.Services.Authentication;
 using TurqoiseEatary.Infrastructure;
@@ -23,7 +24,7 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHttpsRedirection();
 
 app.MapControllers();
