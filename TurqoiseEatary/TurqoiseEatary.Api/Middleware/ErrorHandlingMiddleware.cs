@@ -1,5 +1,6 @@
 using System.Net;
 using System.Text.Json;
+using ErrorOr;
 using Microsoft.IdentityModel.Tokens;
 
 namespace TurqoiseEatary.Api.Middleware;
@@ -25,14 +26,18 @@ public class ErrorHandlingMiddleware
     }
     private static Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
+        var errors = context?.Items["errors"] as List<Error>;
         var response = context.Response;
         response.ContentType = "application/Json";
         response.StatusCode = (int)HttpStatusCode.InternalServerError;
         var errorResponse = new
         {
             Message = "An error occurred. Please try again later.",
-            Error = exception.Message
+            Error = exception.Message,
+            Errors = errors?.Select(e => e.Code ?? "Unknown error").ToList()
         };
+
+
         var result = JsonSerializer.Serialize(errorResponse);
         return response.WriteAsync(result);
 

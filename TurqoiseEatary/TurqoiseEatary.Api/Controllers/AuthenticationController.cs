@@ -1,4 +1,5 @@
 using System.Data;
+using ErrorOr;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using TurqoiseEatary.Application.Services.Authentication;
@@ -9,9 +10,9 @@ using RegisterRequest = TurqoiseEatary.Contracts.Authentication.RegisterRequest;
 
 namespace TurqoiseEatary.Api.Controllers;
 
-[ApiController]
+
 [Route("auth")]
-public class AuthenticationController : ControllerBase
+public class AuthenticationController : ApiController
 {
     private readonly IAuthenticationService _authenticationService;
 
@@ -23,30 +24,39 @@ public class AuthenticationController : ControllerBase
     [HttpPost("register")]
     public IActionResult Register(RegisterRequest request)
     {
-        var authResult = _authenticationService.Register(request.FirstName, request.LastName, request.Email, request.Password);
-        var response = new AuthenticationResponse(
-            authResult.user.Id,
-            authResult.user.FirstName,
-            authResult.user.LastName,
-            authResult.user.Email,
-            authResult.Token
+        ErrorOr<AuthenticationResult> authResult = _authenticationService.Register(
+            request.FirstName,
+            request.LastName,
+            request.Email,
+            request.Password);
+
+        return authResult.Match(
+            authResult => Ok(MapAuthResult(authResult)),
+            errors => Problem(errors)
         );
-        return Ok(response);
+        // return Ok(response);
     }
 
     [HttpPost("login")]
     public IActionResult Login(LoginRequest login)
     {
-        var authResult = _authenticationService.Login(login.Email, login.Password);
-        var response = new AuthenticationResponse(
-            authResult.user.Id,
-            authResult.user.FirstName,
-            authResult.user.LastName,
-            authResult.user.Email,
-            authResult.Token
-        );
+        var authResult = _authenticationService.Login(
+            login.Email,
+            login.Password);
 
-        return Ok(response);
+        return authResult.Match(
+        authResult => Ok(MapAuthResult(authResult)),
+        errors => Problem(errors));
+    }
+    private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+    {
+        return new AuthenticationResponse(
+                    authResult.user.Id,
+                    authResult.user.FirstName,
+                    authResult.user.LastName,
+                    authResult.user.Email,
+                    authResult.Token
+                );
     }
 
 

@@ -45,3 +45,4 @@ C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Deb
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\obj\Debug\net9.0\TurqoiseEatary.Api.sourcelink.json
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\ErrorOr.dll

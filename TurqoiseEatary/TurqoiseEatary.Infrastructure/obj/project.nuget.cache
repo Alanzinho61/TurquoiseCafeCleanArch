@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bqe0E0nUc4c=",
+  "dgSpecHash": "Ix4N4b3lYQ8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Infrastructure\\TurqoiseEatary.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mucahit\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.2\\microsoft.extensions.configuration.9.0.2.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.2\\microsoft.extensions.configuration.abstractions.9.0.2.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.2\\microsoft.extensions.configuration.binder.9.0.2.nupkg.sha512",

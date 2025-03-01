@@ -10,3 +10,4 @@ C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\TurqoiseEatary.Domain.pdb
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\ref\TurqoiseEatary.Domain.dll
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\TurqoiseEatary.Domain.sourcelink.json
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Domain\obj\Debug\net9.0\TurqoiseEatary.Domain.csproj.AssemblyReference.cache

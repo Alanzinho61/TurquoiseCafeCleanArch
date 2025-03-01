@@ -1,5 +1,7 @@
+using ErrorOr;
 using TurqoiseEatary.Application.Common.Interfaces.Authentication;
 using TurqoiseEatary.Application.Common.Interfaces.Persistance;
+using TurqoiseEatary.Domain.Common.Errors;
 using TurqoiseEatary.Domain.Entities;
 
 namespace TurqoiseEatary.Application.Services.Authentication;
@@ -15,12 +17,12 @@ public class AuthenticationService : IAuthenticationService
         _userRepository = userRepository;
     }
 
-    public AuthenticationResult Register(string firstName, string lastName, string email, string password)
+    public ErrorOr<AuthenticationResult> Register(string firstName, string lastName, string email, string password)
     {
         // Check if user exists
         if (_userRepository.GetUserByMail(email) != null)
         {
-            throw new Exception("User not exist.");
+            return Errors.User.DuplicateEmail;
         }
 
 
@@ -44,17 +46,19 @@ public class AuthenticationService : IAuthenticationService
             token);
     }
 
-    public AuthenticationResult Login(string email, string password)
+    public ErrorOr<AuthenticationResult> Login(string email, string password)
     {
         // Check if user exists
         if (_userRepository.GetUserByMail(email) is not User user)
         {
-            throw new Exception("User not exist.");
+            return Errors.Authentication.InvalidCredentials;
+            // throw new Exception("User not exist.");
         }
         // Validate the password is correct
         if (user.Password != password)
         {
-            throw new Exception("Invalid Password");
+            return new[] { Errors.Authentication.InvalidCredentials };
+            // throw new Exception("Invalid Password");
         }
 
         // Create JWT Token
