@@ -1,6 +1,8 @@
 using System.Net;
 using System.Text.Json;
 using ErrorOr;
+using Microsoft.AspNetCore.ResponseCaching;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 namespace TurqoiseEatary.Api.Middleware;
@@ -26,6 +28,7 @@ public class ErrorHandlingMiddleware
     }
     private static Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
+
         var errors = context?.Items["errors"] as List<Error>;
         var response = context.Response;
         response.ContentType = "application/Json";

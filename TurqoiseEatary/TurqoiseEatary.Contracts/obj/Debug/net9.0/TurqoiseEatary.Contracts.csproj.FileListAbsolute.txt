@@ -5,8 +5,8 @@ C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\o
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\obj\Debug\net9.0\TurqoiseEatary.Contracts.AssemblyInfoInputs.cache
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\obj\Debug\net9.0\TurqoiseEatary.Contracts.AssemblyInfo.cs
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\obj\Debug\net9.0\TurqoiseEatary.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\obj\Debug\net9.0\TurqoiseEatary.Contracts.sourcelink.json
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\obj\Debug\net9.0\TurqoiseEatary.Contracts.dll
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\obj\Debug\net9.0\refint\TurqoiseEatary.Contracts.dll
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\obj\Debug\net9.0\TurqoiseEatary.Contracts.pdb
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\obj\Debug\net9.0\ref\TurqoiseEatary.Contracts.dll
-C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Contracts\obj\Debug\net9.0\TurqoiseEatary.Contracts.sourcelink.json

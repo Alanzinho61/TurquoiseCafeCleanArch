@@ -3,8 +3,11 @@ using ErrorOr;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using TurqoiseEatary.Application.Services.Authentication;
+using TurqoiseEatary.Application.Services.Authentication.Command;
+using TurqoiseEatary.Application.Services.Authentication.Common;
+using TurqoiseEatary.Application.Services.Authentication.Queries;
 using TurqoiseEatary.Contracts.Authentication;
-using IAuthenticationService = TurqoiseEatary.Application.Services.Authentication.IAuthenticationService;
+using IAuthenticationCommandService = TurqoiseEatary.Application.Services.Authentication.Command.IAuthenticationCommandService;
 using LoginRequest = TurqoiseEatary.Contracts.Authentication.LoginRequest;
 using RegisterRequest = TurqoiseEatary.Contracts.Authentication.RegisterRequest;
 
@@ -14,17 +17,21 @@ namespace TurqoiseEatary.Api.Controllers;
 [Route("auth")]
 public class AuthenticationController : ApiController
 {
-    private readonly IAuthenticationService _authenticationService;
+    private readonly IAuthenticationCommandService _authenticationCommandService;
+    private readonly IAuthenticationQueryService _authenticationQueryService;
 
-    public AuthenticationController(IAuthenticationService authenticationService)
+    public AuthenticationController(
+    IAuthenticationCommandService authenticationCommandService,
+    IAuthenticationQueryService authenticationQueryService)
     {
-        _authenticationService = authenticationService;
+        _authenticationCommandService = authenticationCommandService;
+        _authenticationQueryService = authenticationQueryService;
     }
 
     [HttpPost("register")]
     public IActionResult Register(RegisterRequest request)
     {
-        ErrorOr<AuthenticationResult> authResult = _authenticationService.Register(
+        ErrorOr<AuthenticationResult> authResult = _authenticationCommandService.Register(
             request.FirstName,
             request.LastName,
             request.Email,
@@ -40,7 +47,7 @@ public class AuthenticationController : ApiController
     [HttpPost("login")]
     public IActionResult Login(LoginRequest login)
     {
-        var authResult = _authenticationService.Login(
+        var authResult = _authenticationQueryService.Login(
             login.Email,
             login.Password);
 
