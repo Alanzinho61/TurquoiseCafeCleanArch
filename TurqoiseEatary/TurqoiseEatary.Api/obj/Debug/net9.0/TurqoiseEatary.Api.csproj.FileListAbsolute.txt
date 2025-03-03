@@ -46,3 +46,6 @@ C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\obj\Deb
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\obj\Debug\net9.0\TurqoiseEatary.Api.pdb
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\obj\Debug\net9.0\TurqoiseEatary.Api.genruntimeconfig.cache
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\obj\Debug\net9.0\ref\TurqoiseEatary.Api.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\MediatR.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\MediatR.Contracts.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
