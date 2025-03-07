@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TurqoiseEatary.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9da1187a7892d60dee954f5b3cabbc6c372fd2b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30f06c6d634f9ff92c9144115a144dc0d0698b0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TurqoiseEatary.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TurqoiseEatary.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

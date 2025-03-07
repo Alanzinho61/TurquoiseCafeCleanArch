@@ -1,4 +1,5 @@
 
+using TurqoiseEatary.Api;
 using TurqoiseEatary.Api.Middleware;
 using TurqoiseEatary.Application;
 using TurqoiseEatary.Application.Services.Authentication;
@@ -8,9 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 {
     builder.Services
+    .AddPresentation()
     .AddApplication()
     .AddInfrastructure(builder.Configuration);
-    builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddOpenApi();
 }

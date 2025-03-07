@@ -12,6 +12,7 @@ using IAuthenticationCommandService = TurqoiseEatary.Application.Services.Authen
 using LoginRequest = TurqoiseEatary.Contracts.Authentication.LoginRequest;
 using RegisterRequest = TurqoiseEatary.Contracts.Authentication.RegisterRequest;
 using TurqoiseEatary.Application.Authentication.Queries.Login;
+using MapsterMapper;
 
 namespace TurqoiseEatary.Api.Controllers;
 
@@ -20,19 +21,24 @@ namespace TurqoiseEatary.Api.Controllers;
 public class AuthenticationController : ApiController
 {
     private readonly ISender _mediator;
-    public AuthenticationController(IMediator mediator)
+    private readonly IMapper _mapper;
+    public AuthenticationController(
+        IMediator mediator,
+        IMapper mapper)
     {
         _mediator = mediator;
+        _mapper = mapper;
     }
 
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var command = new RegisterCommand(request.FirstName, request.LastName, request.Email, request.Password);
+        // var command = new RegisterCommand(request.FirstName, request.LastName, request.Email, request.Password);
+        var command = _mapper.Map<RegisterCommand>(request);
         ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
         return authResult.Match(
-            authResult => Ok(MapAuthResult(authResult)),
+            authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
             errors => Problem(errors)
         );
     }
@@ -40,25 +46,26 @@ public class AuthenticationController : ApiController
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest login)
     {
-        var query = new LoginQuery(login.Email, login.Password);
+        //var query = new LoginQuery(login.Email, login.Password);
+        var query = _mapper.Map<LoginQuery>(login);
         var authResult = await _mediator.Send(query);
 
         //Buradaki hata kismini duzelt
 
         return authResult.Match(
-        authResult => Ok(MapAuthResult(authResult)),
+        authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
         errors => Problem(errors));
     }
-    private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
-    {
-        return new AuthenticationResponse(
-                    authResult.user.Id,
-                    authResult.user.FirstName,
-                    authResult.user.LastName,
-                    authResult.user.Email,
-                    authResult.Token
-                );
-    }
+    // private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+    // {
+    //     return new AuthenticationResponse(
+    //                 authResult.user.Id,
+    //                 authResult.user.FirstName,
+    //                 authResult.user.LastName,
+    //                 authResult.user.Email,
+    //                 authResult.Token
+    //             );
+    // }
 
 
 }
