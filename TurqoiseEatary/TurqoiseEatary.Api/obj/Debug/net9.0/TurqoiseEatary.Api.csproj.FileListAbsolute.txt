@@ -52,3 +52,6 @@ C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Deb
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\Mapster.dll
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\Mapster.Core.dll
 C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\Mapster.DependencyInjection.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+C:\Users\Mucahit\Desktop\TurqoiseCaffe\TurqoiseEatary\TurqoiseEatary.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
