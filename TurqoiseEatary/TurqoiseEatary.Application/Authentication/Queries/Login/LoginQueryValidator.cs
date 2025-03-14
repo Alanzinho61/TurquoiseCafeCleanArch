@@ -7,7 +7,7 @@ public class LoginQueryValidator : AbstractValidator<LoginQuery>
 {
     public LoginQueryValidator()
     {
-        RuleFor(x => x.Email).NotEmpty().WithMessage("bu denemeydi zaaa xd");
+        RuleFor(x => x.Email).NotEmpty().WithMessage("example usage with message");
         RuleFor(x => x.Password).NotEmpty();
     }
 

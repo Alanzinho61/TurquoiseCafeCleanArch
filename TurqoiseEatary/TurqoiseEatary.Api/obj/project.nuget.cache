@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3YAOws9oNeU=",
+  "dgSpecHash": "UHD7nTJqgKg=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mucahit\\Desktop\\TurqoiseCaffe\\TurqoiseEatary\\TurqoiseEatary.Api\\TurqoiseEatary.Api.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Mucahit\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.3\\microsoft.aspnetcore.authentication.jwtbearer.9.0.3.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.2\\microsoft.extensions.configuration.9.0.2.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.2\\microsoft.extensions.configuration.abstractions.9.0.2.nupkg.sha512",
@@ -26,6 +27,8 @@
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.5.0\\microsoft.identitymodel.abstractions.8.5.0.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.5.0\\microsoft.identitymodel.jsonwebtokens.8.5.0.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.identitymodel.logging\\8.5.0\\microsoft.identitymodel.logging.8.5.0.nupkg.sha512",
+    "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
+    "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.5.0\\microsoft.identitymodel.tokens.8.5.0.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
     "C:\\Users\\Mucahit\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.5.0\\system.identitymodel.tokens.jwt.8.5.0.nupkg.sha512"

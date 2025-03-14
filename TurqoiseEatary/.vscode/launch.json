@@ -13,6 +13,8 @@
             "args": [],
             "cwd": "${workspaceFolder}/TurqoiseEatary.Api",
             "stopAtEntry": false,
+            // "requireExactSource": false,
+            // "justMyCode": false,
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"

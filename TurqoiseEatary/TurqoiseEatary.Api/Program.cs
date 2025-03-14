@@ -12,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
     .AddPresentation()
     .AddApplication()
     .AddInfrastructure(builder.Configuration);
+
+
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddOpenApi();
 }
@@ -27,7 +29,8 @@ if (app.Environment.IsDevelopment())
 }
 app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 app.Run();
 
