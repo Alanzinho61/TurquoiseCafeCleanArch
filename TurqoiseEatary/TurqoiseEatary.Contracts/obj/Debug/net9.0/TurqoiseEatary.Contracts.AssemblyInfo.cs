@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TurqoiseEatary.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a39ba0a70bb17c33ae3c51f9e7c8eca47e035de7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60a45a93d263e1398d2742d4e2dc9a8e27a6323d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TurqoiseEatary.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TurqoiseEatary.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
