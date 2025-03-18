@@ -1,4 +1,4 @@
-namespace TurqoiseEatary.Domain.Entities;
+namespace TurqoiseEatary.Domain.User;
 
 public class User
 {
