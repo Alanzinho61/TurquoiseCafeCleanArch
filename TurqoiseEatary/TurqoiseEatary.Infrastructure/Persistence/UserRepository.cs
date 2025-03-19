@@ -1,5 +1,5 @@
 using TurqoiseEatary.Application.Common.Interfaces.Persistance;
-using TurqoiseEatary.Domain.Entities;
+using TurqoiseEatary.Domain.User;
 
 namespace TurqoiseEatary.Infrastructure.Persistence;
 

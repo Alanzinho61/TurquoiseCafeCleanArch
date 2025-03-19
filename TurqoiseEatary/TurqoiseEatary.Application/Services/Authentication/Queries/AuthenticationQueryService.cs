@@ -3,7 +3,7 @@ using TurqoiseEatary.Application.Common.Interfaces.Authentication;
 using TurqoiseEatary.Application.Common.Interfaces.Persistance;
 using TurqoiseEatary.Application.Services.Authentication.Common;
 using TurqoiseEatary.Domain.Common.Errors;
-using TurqoiseEatary.Domain.Entities;
+using TurqoiseEatary.Domain.User;
 
 namespace TurqoiseEatary.Application.Services.Authentication.Queries;
 

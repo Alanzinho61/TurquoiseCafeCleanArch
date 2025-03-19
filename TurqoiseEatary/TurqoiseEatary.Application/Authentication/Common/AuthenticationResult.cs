@@ -1,5 +1,5 @@
 using MediatR;
-using TurqoiseEatary.Domain.Entities;
+using TurqoiseEatary.Domain.User;
 
 namespace TurqoiseEatary.Application.Authentication.Common;
 

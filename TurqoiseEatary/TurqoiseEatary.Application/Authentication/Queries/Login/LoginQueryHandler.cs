@@ -6,7 +6,7 @@ using TurqoiseEatary.Application.Common.Interfaces.Persistance;
 using TurqoiseEatary.Application.Authentication.Common;
 using TurqoiseEatary.Application.Authentication.Queries.Login;
 using TurqoiseEatary.Domain.Common.Errors;
-using TurqoiseEatary.Domain.Entities;
+using TurqoiseEatary.Domain.User;
 
 namespace TurqoiseEatary.Application.Authentication.Queries.Login;
 

@@ -4,7 +4,7 @@ using TurqoiseEatary.Application.Common.Interfaces.Authentication;
 using TurqoiseEatary.Application.Common.Interfaces.Persistance;
 using TurqoiseEatary.Application.Authentication.Common;
 using TurqoiseEatary.Domain.Common.Errors;
-using TurqoiseEatary.Domain.Entities;
+using TurqoiseEatary.Domain.User;
 
 namespace TurqoiseEatary.Application.Authentication.Commands.Register;
 

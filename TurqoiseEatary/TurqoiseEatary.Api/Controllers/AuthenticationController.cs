@@ -13,6 +13,7 @@ using LoginRequest = TurqoiseEatary.Contracts.Authentication.LoginRequest;
 using RegisterRequest = TurqoiseEatary.Contracts.Authentication.RegisterRequest;
 using TurqoiseEatary.Application.Authentication.Queries.Login;
 using MapsterMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TurqoiseEatary.Api.Controllers;
 
@@ -31,6 +32,7 @@ public class AuthenticationController : ApiController
     }
 
     [HttpPost("register")]
+    [AllowAnonymous]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
         // var command = new RegisterCommand(request.FirstName, request.LastName, request.Email, request.Password);
@@ -44,6 +46,7 @@ public class AuthenticationController : ApiController
     }
 
     [HttpPost("login")]
+    [AllowAnonymous]
     public async Task<IActionResult> Login(LoginRequest login)
     {
         //var query = new LoginQuery(login.Email, login.Password);

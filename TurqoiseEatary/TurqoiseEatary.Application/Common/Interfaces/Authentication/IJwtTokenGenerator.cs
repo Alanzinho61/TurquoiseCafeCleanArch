@@ -1,4 +1,4 @@
-using TurqoiseEatary.Domain.Entities;
+using TurqoiseEatary.Domain.User;
 
 namespace TurqoiseEatary.Application.Common.Interfaces.Authentication;
 

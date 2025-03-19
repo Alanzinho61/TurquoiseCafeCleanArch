@@ -5,7 +5,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using TurqoiseEatary.Application.Common.Interfaces.Authentication;
 using TurqoiseEatary.Application.Common.Interfaces.Services;
-using TurqoiseEatary.Domain.Entities;
+using TurqoiseEatary.Domain.User;
 
 namespace TurqoiseEatary.Infrastructure.Authentication;
 
