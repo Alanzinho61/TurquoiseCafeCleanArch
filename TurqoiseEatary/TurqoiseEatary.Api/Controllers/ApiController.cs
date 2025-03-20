@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
+
 namespace TurqoiseEatary.Api.Controllers;
 
 [ApiController]
@@ -12,6 +13,7 @@ public class ApiController : ControllerBase
 
     protected IActionResult Problem(List<Error> errors)
     {
+
         if (errors.Count is 0)
         {
             Problem();
