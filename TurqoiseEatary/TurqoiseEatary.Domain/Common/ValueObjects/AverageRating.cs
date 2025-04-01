@@ -33,9 +33,9 @@ namespace TurqoiseEatary.Domain.Common.ValueObjects;
 //     }
 // }
 
-public sealed class AverageRatng : ValueObject
+public sealed class AverageRating : ValueObject
 {
-    private AverageRatng(double value, int numRatings)
+    private AverageRating(double value, int numRatings)
     {
         Value = value;
 
@@ -45,9 +45,9 @@ public sealed class AverageRatng : ValueObject
     public double Value { get; private set; }
     public int NumRatings { get; private set; }
 
-    public static AverageRatng CreateNew(double rating = 0, int numRatings = 0)
+    public static AverageRating CreateNew(double rating = 0, int numRatings = 0)
     {
-        return new AverageRatng(rating, numRatings);
+        return new AverageRating(rating, numRatings);
     }
 
     public void AddNewRating(Rating rating)

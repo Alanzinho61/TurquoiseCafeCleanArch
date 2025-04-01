@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using TurqoiseEatary.Application.Common.Interfaces;
 using TurqoiseEatary.Application.Common.Interfaces.Authentication;
 using TurqoiseEatary.Application.Common.Interfaces.Persistance;
 using TurqoiseEatary.Application.Common.Interfaces.Services;
@@ -18,11 +19,19 @@ public static class DependencyInjection
         this IServiceCollection services,
         ConfigurationManager configuration)
     {
-        services.AddAuth(configuration);
+        services
+        .AddAuth(configuration)
+        .AddPersistance();
 
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
-
+        return services;
+    }
+    public static IServiceCollection AddPersistance(
+        this IServiceCollection services
+    )
+    {
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IMenuRepository, MenuRepository>();
         return services;
     }
 
@@ -33,6 +42,11 @@ public static class DependencyInjection
         var JwtSettings = new JwtSettings();
         configuration.Bind(JwtSettings.SectionName, JwtSettings);
 
+        var jwtSettings = configuration.GetSection(JwtSettings.SectionName).Get<JwtSettings>();
+        if (jwtSettings == null)
+        {
+            throw new Exception("Jwt Settings could not be loaded");
+        }
 
         services.AddSingleton(Options.Create(JwtSettings));
         // services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));

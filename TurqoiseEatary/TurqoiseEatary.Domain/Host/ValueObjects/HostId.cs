@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Microsoft.VisualBasic;
 using TurqoiseEatary.Domain.Common.Menu.ValueObjects;
 using TurqoiseEatary.Domain.Common.Models;
@@ -15,6 +16,11 @@ public sealed class HostId : ValueObject
     public static HostId CreateUnique()
     {
         return new(Guid.NewGuid());
+    }
+
+    public static HostId Create(Guid value)
+    {
+        return new HostId(value);
     }
     public override IEnumerable<object> GetEqualityComponents()
     {

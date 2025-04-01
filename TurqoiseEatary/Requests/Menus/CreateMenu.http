@@ -1,0 +1,24 @@
+@host=http://localhost:5235
+
+@token=eyhGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MDU3NTMxNC0zMTVmLTRmMTgtYWZmOC1lMmM0YWI1ZTRhOWQiLCJnaXZlbl9uYW1lIjoicmFtYXphbiIsImZhbWlseV9uYW1lIjoiZ29sZGVuaGlsbCIsImVtYWlsIjoicmFtYXphbkBjcmF6Ym95LmNvbSIsImp0aSI6Ijg4MDY4ZTMyLWNkMTEtNGIzNC1hMjc0LTFhMTg4MjAwNmZmNCIsImV4cCI6MTc0MzIzNjQzOSwiaXNzIjoiVHVycW9pc2VFYXRhcnkiLCJhdWQiOiJUdXJxb2lzZUVhdGFyeSJ9.Z0m4fiCGo3XzSVk18_EcccBd7lXT4jf8A7wnudzvgfk
+@hostId=3f1d8e7a-9c2f-4d42-a6b7-8e9f5d1c3a2b
+POST {{host}}/hosts/{{hostId}}/menu
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "Turqoise Menu",
+    "description": "A menu with yummy food",
+    "sections": [
+        {
+            "name": "Appetizers",
+            "description": "Starters",
+            "items": [
+                {
+                    "name": "Menemen",
+                    "description": "Cakalli Menemen"
+                }
+            ]
+        }
+    ]
+}

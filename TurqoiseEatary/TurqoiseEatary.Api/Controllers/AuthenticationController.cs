@@ -59,16 +59,17 @@ public class AuthenticationController : ApiController
         authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
         errors => Problem(errors));
     }
-    // private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
-    // {
-    //     return new AuthenticationResponse(
-    //                 authResult.user.Id,
-    //                 authResult.user.FirstName,
-    //                 authResult.user.LastName,
-    //                 authResult.user.Email,
-    //                 authResult.Token
-    //             );
-    // }
+
+    [HttpGet("test-auth")]
+    public IActionResult TestAuth()
+    {
+        var user = HttpContext.User;
+        if (user.Identity.IsAuthenticated)
+        {
+            return Ok(new { Message = "Token başarılı çalışıyor!", User = user.Identity.Name });
+        }
+        return Unauthorized();
+    }
 
 
 }
