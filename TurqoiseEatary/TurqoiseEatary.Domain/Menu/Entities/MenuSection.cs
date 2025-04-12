@@ -37,5 +37,9 @@ public sealed class MenuSection : Entity<MenuSectionId>
             items
         );
     }
+    private MenuSection()
+    {
+
+    }
 
 }

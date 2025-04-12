@@ -23,5 +23,9 @@ public sealed class MenuItem : Entity<MenuItemId>
             description
         );
     }
+    private MenuItem()
+    {
+
+    }
 
 }

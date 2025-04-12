@@ -1,4 +1,5 @@
 using TurqoiseEatary.Domain.Common.Models;
+using TurqoiseEatary.Domain.Menu.Entities;
 
 namespace TurqoiseEatary.Domain.Common.ValueObjects;
 public sealed class MenuItemId : ValueObject
@@ -10,13 +11,20 @@ public sealed class MenuItemId : ValueObject
     }
     public static MenuItemId CreateUnique()
     {
-        return new(Guid.NewGuid());
+        return new MenuItemId(Guid.NewGuid());
+    }
+    public static MenuItemId Create(Guid value)
+    {
+        return new MenuItemId(value);
     }
 
     public override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;
     }
+    private MenuItemId()
+    {
 
+    }
 
 }

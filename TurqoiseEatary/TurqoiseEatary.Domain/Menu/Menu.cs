@@ -13,47 +13,46 @@ public sealed class Menu : AggregateRoot<MenuId>
 {
     private readonly List<MenuSection> _sections = new();
     private readonly List<DinnerId> _dinnerIds = new();
-    private readonly List<MenuReviewId> _menuReviewIds = new();
-    public string Name { get; }
-    public string Description { get; }
-    public AverageRating AverageRating { get; }
+    private readonly List<MenuReviewId> _menuReviewIds = new(); public string Name { get; }
+    public string Description { get; private set; }
+    public AverageRating AverageRating { get; private set; }
     public IReadOnlyList<MenuSection> Sections => _sections.AsReadOnly();
-    public HostId HostId { get; }
+    public HostId HostId { get; private set; }
     public IReadOnlyList<DinnerId> DinnerIds => _dinnerIds.AsReadOnly();
     public IReadOnlyList<MenuReviewId> MenuReviewIds => _menuReviewIds.AsReadOnly();
-    public DateTime CreateDateTime { get; }
-    public DateTime UpdatedDateTime { get; }
+    public DateTime CreateDateTime { get; private set; }
+    public DateTime UpdatedDateTime { get; private set; }
     private Menu(
         MenuId menuId,
+        HostId hostId,
         string name,
         string description,
-        HostId hostId,
-        DateTime createdDateTime,
-        DateTime updatedDateTime
-        ) : base(menuId)
+        AverageRating averageRating,
+        List<MenuSection>? sections) : base(menuId)
     {
         Name = name;
         Description = description;
         HostId = hostId;
-        CreateDateTime = createdDateTime;
-        UpdatedDateTime = updatedDateTime;
+        _sections = sections;
+        AverageRating = averageRating;
     }
 
     public static Menu Create(
+        HostId hostId,
         string name,
         string description,
-        HostId hostId,
-        List<MenuSection> sections)
+        List<MenuSection>? sections = null)
     {
-        return new(
-            MenuId.CreateUnique(),
-            name,
-            description,
-            hostId,
-            DateTime.UtcNow,
-            DateTime.UtcNow
-        );
+        var menu = new Menu(
+             MenuId.CreateUnique(),
+             hostId,
+             name,
+             description,
+             AverageRating.CreateNew(0),
+             sections ?? new()
+         );
+        return menu;
     }
-
+    private Menu() { }
 
 }

@@ -1,5 +1,6 @@
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -30,6 +31,9 @@ public static class DependencyInjection
         this IServiceCollection services
     )
     {
+        services.AddDbContext<TurqoiseEataryDbContext>(options => options.UseSqlServer(
+            "Server=DESKTOP-CF4C8LU\\SQLEXPRESS;Database=TurqoiseEataryDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
+        )); // Write ConnectionString
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IMenuRepository, MenuRepository>();
         return services;
